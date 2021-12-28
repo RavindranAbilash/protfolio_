@@ -1,6 +1,11 @@
+@import "../../global";
 .contact{
   background-color: white;
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+  }
 
 
 
@@ -11,6 +16,8 @@
 
     img{
       height: 100%;
+
+
     }
   }
   .right{
@@ -20,8 +27,14 @@
     align-items: center;
     justify-content:space-around;
     height: 70%;
+
+    @include mobile{
+      height: 90%;
+    }
     h2{
       font-size: 30px;
+
+
     }
 
     form{
@@ -32,15 +45,28 @@
       justify-content: space-around;
       flex-direction: column;
 
+
+
+
+
       input{
         width: 300px;
         height: 30px;
         font-size: 14px;
+
+        @include mobile{
+          width: 250px;
+          height: 20px;
+        }
       }
       textarea{
         width: 300px;
         height: 200px;
         font-size: 14px;
+        @include mobile{
+          width: 250px;
+          height: 130px;
+        }
       }
 
       button{
