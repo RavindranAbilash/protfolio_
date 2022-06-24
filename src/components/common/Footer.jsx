@@ -7,7 +7,7 @@ const Footer = () => {
       <footer>
         {social.map((item) => (
           <>
-            <a href={item.link} target="_blank"><i data-aos='zoom-in'>{item.icon}</i></a>
+            <a href={item.link} target="_blank" rel="noopener noreferrer" ><i data-aos='zoom-in'>{item.icon}</i></a>
           </>
         ))}
         <p data-aos='zoom-in'>All Right Reserved Ravindran Abilash</p>

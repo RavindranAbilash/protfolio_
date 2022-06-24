@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { home } from "../data/dummydata"
 import Typewriter from "typewriter-effect"
 import { saveAs } from "file-saver";
@@ -14,7 +14,7 @@ export const Hero = () => {
   return (
     <>
       <section className='hero'>
-        {home.map((val, i) => (
+        {home.map((val) => (
           <div className='heroContent'>
             <h3 className='fontSize' data-aos='fade-right'>
               {val.text}

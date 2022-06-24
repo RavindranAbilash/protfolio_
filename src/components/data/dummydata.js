@@ -1,10 +1,5 @@
 import {
-  Settings,
-  CropRotate,
-  ViewInAr,
-  PieChart,
   Code,
-  BarChart,
   CloudOutlined,
   FavoriteBorder,
   Public,

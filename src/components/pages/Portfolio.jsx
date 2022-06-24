@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Heading } from "../common/Heading"
 import { portfolio } from "../data/dummydata"
-import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined"
+
 
 const allCategory = ["all", ...new Set(portfolio.map((item) => item.category))]
 export const Portfolio = () => {
@@ -14,7 +14,6 @@ export const Portfolio = () => {
     setLists(newItems)
     if (category === "all") {
       setLists(portfolio)
-      return
     }
   }
 
@@ -41,8 +40,8 @@ export const Portfolio = () => {
                   <span>{item.name}</span>
                   <span>Technologies : {item.Technologies}</span>
                   <div className="buttonContainer">
-                    <a className="demo" href={item.demo} target="_blank">Demo</a>
-                    <a className="code" href={item.code} target="_blank">Code</a>
+                    <a className="demo" href={item.demo} target="_blank" rel="noopener noreferrer">Demo</a>
+                    <a className="code" href={item.code} target="_blank" rel="noopener noreferrer">Code</a>
                   </div>
                 </div>
               </div>
